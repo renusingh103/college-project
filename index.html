@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Clone - Premium Web Player</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="assets/logo_generated.png">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Circular:wght@400;500;700;900&family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="app-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="logo-container">
+                <img style="width: 50px;" src="https://upload.wikimedia.org/wikipedia/commons/8/84/Spotify_icon.svg" alt="Mix 1">
+                <span class="logo-text">Spotify Clone</span>
+            </div>
+
+            <nav class="main-nav">
+                <ul>
+                    <li class="nav-item active">
+                        <a href="#"><i class="fas fa-home"></i> <span>Home</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#"><i class="fas fa-search"></i> <span>Search</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#"><i class="fas fa-book"></i> <span>Your Library</span></a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="library-section">
+                <div class="section-header">
+                    <button class="icon-btn"><i class="fas fa-plus"></i></button>
+                    <button class="icon-btn"><i class="fas fa-arrow-right"></i></button>
+                </div>
+
+                <div class="playlists-container scrollbar-hidden">
+                    <div class="playlist-pill active">Playlists</div>
+                    <div class="playlist-pill">Artists</div>
+                    <div class="playlist-pill">Albums</div>
+                    <div class="playlist-pill">Podcasts</div>
+                </div>
+
+                <div class="library-list scrollbar-custom">
+                    <div class="library-item">
+                        <div class="item-img gradient-1"><i class="fas fa-heart"></i></div>
+                        <div class="item-info">
+                            <span class="item-title">Liked Songs</span>
+                            <span class="item-desc">Playlist • 324 songs</span>
+                        </div>
+                    </div>
+                    <div class="library-item">
+                        <div class="item-img gradient-2"><i class="fas fa-bolt"></i></div>
+                        <div class="item-info">
+                            <span class="item-title">Energy Booster</span>
+                            <span class="item-desc">Playlist • Spotify Clone</span>
+                        </div>
+                    </div>
+                    <div class="library-item">
+                        <div class="item-img gradient-3"><i class="fas fa-moon"></i></div>
+                        <div class="item-info">
+                            <span class="item-title">Sleep Sounds</span>
+                            <span class="item-desc">Playlist • 50 songs</span>
+                        </div>
+                    </div>
+                    <div class="library-item">
+                        <div class="item-img gradient-4"><i class="fas fa-code"></i></div>
+                        <div class="item-info">
+                            <span class="item-title">Coding Focus</span>
+                            <span class="item-desc">Playlist • Instrumental</span>
+                        </div>
+                    </div>
+                    <div class="library-item">
+                        <div class="item-img gradient-5"><i class="fas fa-car"></i></div>
+                        <div class="item-info">
+                            <span class="item-title">Late Night Drive</span>
+                            <span class="item-desc">Playlist • Synthwave</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content scrollbar-custom">
+            <header class="top-bar">
+                <div class="history-nav">
+                    <button class="circle-btn" disabled><i class="fas fa-chevron-left"></i></button>
+                    <button class="circle-btn"><i class="fas fa-chevron-right"></i></button>
+                </div>
+                <div class="user-actions">
+                    <button class="pill-btn highlight">Explore Premium</button>
+                    <button class="pill-btn"><i class="fas fa-download"></i> Install App</button>
+                    <button class="profile-circle"><i class="fas fa-user"></i></button>
+                </div>
+            </header>
+
+            <div class="content-wrapper">
+                <section class="hero-greeting">
+                    <h1 id="greeting-text">Good evening</h1>
+                </section>
+
+                <section class="recent-grid">
+                    <div class="recent-card">
+                        <div class="recent-img gradient-1"><i class="fas fa-heart"></i></div>
+                        <span class="recent-title">Liked Songs</span>
+                        <div class="play-btn-float"><button><i class="fas fa-play"></i></button></div>
+                    </div>
+                    <div class="recent-card">
+                        <div class="recent-img gradient-6"><i class="fas fa-headphones-alt"></i></div>
+                        <span class="recent-title">On Repeat</span>
+                        <div class="play-btn-float"><button><i class="fas fa-play"></i></button></div>
+                    </div>
+                    <div class="recent-card">
+                        <div class="recent-img gradient-2"><i class="fas fa-bolt"></i></div>
+                        <span class="recent-title">Energy Booster</span>
+                        <div class="play-btn-float"><button><i class="fas fa-play"></i></button></div>
+                    </div>
+                    <div class="recent-card">
+                        <div class="recent-img gradient-3"><i class="fas fa-moon"></i></div>
+                        <span class="recent-title">Sleep Sounds</span>
+                        <div class="play-btn-float"><button><i class="fas fa-play"></i></button></div>
+                    </div>
+                    <div class="recent-card">
+                        <div class="recent-img gradient-7"><i class="fas fa-podcast"></i></div>
+                        <span class="recent-title">Tech Podcast</span>
+                        <div class="play-btn-float"><button><i class="fas fa-play"></i></button></div>
+                    </div>
+                    <div class="recent-card">
+                        <div class="recent-img gradient-5"><i class="fas fa-car"></i></div>
+                        <span class="recent-title">Late Night Drive</span>
+                        <div class="play-btn-float"><button><i class="fas fa-play"></i></button></div>
+                    </div>
+                </section>
+
+                <section class="mixes-section">
+                    <div class="section-title-bar">
+                        <h2>Made for You</h2>
+                        <a href="#">Show all</a>
+                    </div>
+                    <div class="cards-scroller">
+                        <div class="mix-card">
+                            <div class="card-img-wrapper">
+                                <div class="placeholder-img gradient-8"></div>
+                                <div class="play-btn-overlay"><button><i class="fas fa-play"></i></button></div>
+                            </div>
+                            <h3>Daily Mix 1</h3>
+                            <p class="card-desc">Your daily update of the most played tracks.</p>
+                        </div>
+                        <div class="mix-card">
+                            <div class="card-img-wrapper">
+                                <div class="placeholder-img gradient-8"></div>
+                                <div class="play-btn-overlay"><button><i class="fas fa-play"></i></button></div>
+                            </div>
+                            <h3>Discover Weekly</h3>
+                            <p class="card-desc">New music adjusted to your taste every week.</p>
+                        </div>
+                        <div class="mix-card">
+                            <div class="card-img-wrapper">
+                                <div class="placeholder-img gradient-9"></div>
+                                <div class="play-btn-overlay"><button><i class="fas fa-play"></i></button></div>
+                            </div>
+                            <h3>Release Radar</h3>
+                            <p class="card-desc">Catch up on the latest releases.</p>
+                        </div>
+                        <div class="mix-card">
+                            <div class="card-img-wrapper">
+                                <div class="placeholder-img gradient-10"></div>
+                                <div class="play-btn-overlay"><button><i class="fas fa-play"></i></button></div>
+                            </div>
+                            <h3>On Repeat</h3>
+                            <p class="card-desc">Songs you love right now.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="mixes-section">
+                    <div class="section-title-bar">
+                        <h2>Recently Played</h2>
+                        <a href="#">Show all</a>
+                    </div>
+                    <div class="cards-scroller">
+                        <div class="mix-card">
+                            <div class="card-img-wrapper">
+                                <div class="placeholder-img gradient-4"></div>
+                                <div class="play-btn-overlay"><button><i class="fas fa-play"></i></button></div>
+                            </div>
+                            <h3>Coding Focus</h3>
+                            <p class="card-desc">Zero distraction beats for coding.</p>
+                        </div>
+                        <div class="mix-card">
+                            <div class="card-img-wrapper">
+                                <div class="placeholder-img gradient-11"></div>
+                                <div class="play-btn-overlay"><button><i class="fas fa-play"></i></button></div>
+                            </div>
+                            <h3>Top Hits 2024</h3>
+                            <p class="card-desc">The hottest tracks right now.</p>
+                        </div>
+                        <div class="mix-card">
+                            <div class="card-img-wrapper">
+                                <div class="placeholder-img gradient-12"></div>
+                                <div class="play-btn-overlay"><button><i class="fas fa-play"></i></button></div>
+                            </div>
+                            <h3>Indie Vibes</h3>
+                            <p class="card-desc">Best innovative independent music.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <div class="spacer" style="height: 100px;"></div>
+            </div>
+        </main>
+
+        <!-- Player Bar -->
+        <footer class="player-bar">
+            <div class="now-playing-left">
+                <div class="album-art-small">
+                    <img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?w=300&h=300&fit=crop" alt="Album Art">
+                </div>
+                <div class="track-info-container">
+                    <div class="track-name-scroller">
+                        <span class="track-title">Neon Odyssey (Original Mix)</span>
+                    </div>
+                    <span class="artist-name">The Synth Collective</span>
+                </div>
+                <button class="icon-btn-small like-btn"><i class="far fa-heart"></i></button>
+            </div>
+
+            <div class="player-center">
+                <div class="player-controls">
+                    <button class="control-btn shuffle" title="Shuffle"><i class="fas fa-random"></i></button>
+                    <button class="control-btn prev" title="Previous"><i class="fas fa-step-backward"></i></button>
+                    <button class="control-btn play-pause-btn" id="playPauseBtn"><i
+                            class="fas fa-play-circle"></i></button>
+                    <button class="control-btn next" title="Next"><i class="fas fa-step-forward"></i></button>
+                    <button class="control-btn repeat" title="Loop"><i class="fas fa-redo"></i></button>
+                </div>
+                <div class="playback-bar-container">
+                    <span class="curr-time">0:00</span>
+                    <div class="progress-bar-wrapper">
+                        <div class="progress-bar-bg">
+                            <div class="progress-bar-fill" style="width: 0%;"></div>
+                            <div class="progress-handle"></div>
+                        </div>
+                    </div>
+                    <span class="total-time">4:20</span>
+                </div>
+            </div>
+
+            <div class="volume-right">
+                <button class="icon-btn-small"><i class="fas fa-microphone"></i></button>
+                <button class="icon-btn-small"><i class="fas fa-list"></i></button>
+                <button class="icon-btn-small"><i class="fas fa-laptop"></i></button>
+                <div class="volume-control-container">
+                    <button class="icon-btn-small volume-btn"><i class="fas fa-volume-up"></i></button>
+                    <div class="volume-slider-wrapper">
+                        <div class="volume-bar-bg">
+                            <div class="volume-bar-fill" style="width: 70%;"></div>
+                            <div class="volume-handle"></div>
+                        </div>
+                    </div>
+                </div>
+                <button class="icon-btn-small"><i class="fas fa-expand-alt"></i></button>
+            </div>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
